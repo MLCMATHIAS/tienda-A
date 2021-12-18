@@ -11,7 +11,6 @@ body{
 }
              /* header */
 header{
-
    display: flex;             
    justify-content: space-between;
    align-items: center;
@@ -24,6 +23,7 @@ header{
 }
 nav{
     width:100%;
+    background-image: linear-gradient(to bottom, #32b92c, #30b637, #30b441, #30b149, #32ae50, #3aa34f, #40984e, #448d4d, #467846, #456440, #40503b, #393d37);
 }
  ul{
     display: flex;
@@ -204,6 +204,7 @@ div p{
     justify-content: space-between;
     align-items:center;
     border: 3px solid seagreen;
+    background-image: linear-gradient(to bottom, #2cb92c, #2cb637, #2db440, #2fb148, #32ae4f, #349d4a, #358d44, #347d3f, #2d5e2f, #234021, #172514, #030701);
 }
 .logofooter img{
     width: 300px;
