@@ -17,10 +17,23 @@ header{
 }
 .logo img{
     width:100px;
-    height: 50px; 
+    height: 60px; 
     border: 2px solid black;
-    border-radius: 5px;    
+    border-radius: 5px;  
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
 }
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+} 
+
 nav{
     width:100%;
     background-image: linear-gradient(to bottom, #32b92c, #30b637, #30b441, #30b149, #32ae50, #3aa34f, #40984e, #448d4d, #467846, #456440, #40503b, #393d37);
@@ -60,11 +73,25 @@ div.intro{
     margin-bottom: 20px;
     color: black;
     border: 2px solid gray;
-      
-      }
-h1{
-    font-size: 40px;
 }
+h1{
+    font-size: 70px;
+    text-shadow: 5px 5px 5px slategrey;
+    letter-spacing: 10px;
+    animation-duration: 10s;
+    animation-name: aparecer;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+} 
+
 div p{
     font-size: 20px;
 }
@@ -109,9 +136,9 @@ div p{
 .caja3{
     grid-column: 3/5;
     grid-row: 1/2;
-    background-image: url(imagenes/img.3-galeria.jpg);
+    background-image: url(imagenes/avenue-tree-park-plant.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     border: 3px solid greenyellow;
     border-radius: 3px;  
 }
@@ -127,7 +154,7 @@ div p{
 .caja5{
     grid-column: 3/4;
     grid-row: 2/3;
-    background-image: url(imagenes/img.5-galeria.jpeg);
+    background-image: url(imagenes/img.5-galeria.webp);
     background-size: cover;
     background-position: center;
     border: 3px solid greenyellow;
@@ -155,7 +182,7 @@ div p{
 .caja8{
     grid-column: 3/5;
     grid-row: 3/4;
-    background-image: url(imagenes/img.8-galeria.jpg);
+    background-image: url(imagenes/images-galeria.jpeg);
     background-size: cover;
     background-position: center;
     border: 3px solid greenyellow;
@@ -171,6 +198,11 @@ div p{
     font-size: 20px;
     color: black;
     margin-bottom: 20px;
+}
+.banner1 h2{
+    font-size: 40px;
+    text-shadow: 5px 5px 5px slategrey;
+
 }
            /* setion2 */
 .galeria2{
