@@ -214,6 +214,7 @@ div p{
   
 .galeria2 img {
     width: 300px;
+    height: 200px;
     border: 3px solid slategrey;
     border-radius: 2px;
 }
