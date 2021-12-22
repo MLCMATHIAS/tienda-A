@@ -290,9 +290,8 @@ iframe{
 .card-body p{
     color: black;
 }
-
-
-
+                /* pagina secundaria "contactos" */
+               
            /* @media movile */
 @media only screen and (min-width:300px) and (max-width:479px){
 
@@ -372,17 +371,6 @@ div.intro{
 .logofooter img{
     width: 100px;
  }
-     /* pagina secundaria "cuidados" movil */
-
-.sec-cuidados{
-    display: flex;
-    flex-direction: column;
-    border: none;
-}
-.sec-cuidados article h3{
-    text-align: center;
-
-}
       /* pagina secundaria movile "especies" */
 .sec-especies img{
     display: flex;
@@ -400,23 +388,6 @@ div.intro{
     font-size: 16px;
     width: 80px;
 }
-     /* pagina secundaria movil "tienda" */
-.sec-tienda{
-    border: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.sec-tienda article img{
-    border: 3px solid gray;
-}
-.sec-herramientas{
-    border: none;
-}
-.sec-herramientas article img{
-    width: 200px;
-    border: 3px solid steelblue;
-}
-
 }
 
                         /* tabled */
