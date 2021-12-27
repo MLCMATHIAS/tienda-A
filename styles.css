@@ -261,18 +261,10 @@ iframe{
     height: 180px;
 }
 
-        /* pagina secundaria "cu" */
+        /* pagina secundaria "cuidados" */
            
 
-        /* pagina secundaria "especies" */
-.especies-text h2 {
-    text-align: center;
-    color: gold;
-}
-.sec-especies img{
-    margin-top: 10px;
-    margin-left: 150px;
-}
+     
         /* pagina secundaria "tienda" */     
 .card{
     margin-left:30px;
