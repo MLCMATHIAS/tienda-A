@@ -1,0 +1,673 @@
+@charset "UTF-8";
+/* header */
+.navbar img {
+  width: 100px;
+  height: 60px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* barra de navegacion */
+nav {
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#32b92c), color-stop(#30b637), color-stop(#30b441), color-stop(#30b149), color-stop(#32ae50), color-stop(#3aa34f), color-stop(#40984e), color-stop(#448d4d), color-stop(#467846), color-stop(#456440), color-stop(#40503b), to(#393d37));
+  background-image: linear-gradient(to bottom, #32b92c, #30b637, #30b441, #30b149, #32ae50, #3aa34f, #40984e, #448d4d, #467846, #456440, #40503b, #393d37);
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white !important;
+  font-size: 25px;
+}
+
+nav li a a:hover {
+  color: gold !important;
+  opacity: .7;
+}
+
+/* main */
+div.intro {
+  width: 100%;
+  height: 600px;
+  background-image: url(imagenes/imagenprimaria.jpg);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  color: black;
+  border: 2px solid gray;
+}
+
+h1 {
+  font-size: 70px;
+  text-shadow: 5px 5px 5px slategrey;
+  letter-spacing: 10px;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+div p {
+  font-size: 20px;
+}
+
+/* section 1*/
+#galeria {
+  border: 4px solid #2b3630;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.contenedor {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px 40px;
+  text-align: center;
+  color: white;
+  line-height: 120px;
+}
+
+.caja:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.caja1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  background-image: url(imagenes/img-galeria1.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 3px solid greenyellow;
+  border-radius: 3px;
+}
+
+.caja2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background-color: coral;
+  background-image: url(imagenes/img.2-galeria.jpg);
+  background-size: cover;
+  background-position: justify;
+  border: 3px solid greenyellow;
+  border-radius: 3px;
+}
+
+.caja3 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background-image: url(imagenes/avenue-tree-park-plant.jpg);
+  background-size: cover;
+  background-position: bottom;
+  border: 3px solid greenyellow;
+  border-radius: 3px;
+}
+
+.caja4 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  background-image: url(imagenes/img.4-galeria.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 3px solid greenyellow;
+  border-radius: 3px;
+}
+
+.caja5 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background-image: url(imagenes/img.5-galeria.webp);
+  background-size: cover;
+  background-position: center;
+  border: 3px solid greenyellow;
+  border-radius: 3px;
+}
+
+.caja6 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background-image: url(imagenes/img.6-galeria.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 3px solid greenyellow;
+  border-radius: 3px;
+}
+
+.caja7 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  background-color: darkkhaki;
+  background-image: url(imagenes/img.7-galeria.jpeg);
+  background-size: cover;
+  background-position: center;
+  border: 3px solid greenyellow;
+  border-radius: 3px;
+}
+
+.caja8 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  background-image: url(imagenes/img.diseño.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 3px;
+}
+
+/* setion2 */
+.galeria2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 10px;
+}
+
+.galeria2 img {
+  width: 300px;
+  height: 200px;
+  border: 3px solid slategrey;
+  border-radius: 2px;
+}
+
+.galeria2 img h3 {
+  font-size: 20px;
+}
+
+/* banner1 */
+.banner1 {
+  width: 100%;
+  height: 350px;
+  background-image: url(imagenes/Garden-Design.jpg);
+  background-size: cover;
+  background-position: justify;
+  font-size: 20px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.banner1 h2 {
+  font-size: 40px;
+  text-shadow: 5px 5px 5px slategrey;
+}
+
+/* footer */
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid seagreen;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2cb92c), color-stop(#2cb637), color-stop(#2db440), color-stop(#2fb148), color-stop(#32ae4f), color-stop(#349d4a), color-stop(#358d44), color-stop(#347d3f), color-stop(#2d5e2f), color-stop(#234021), color-stop(#172514), to(#030701));
+  background-image: linear-gradient(to bottom, #2cb92c, #2cb637, #2db440, #2fb148, #32ae4f, #349d4a, #358d44, #347d3f, #2d5e2f, #234021, #172514, #030701);
+}
+
+.footer .logofooter img {
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.social {
+  margin: 50px;
+}
+
+.social p {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.social .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social .links a {
+  margin: 0 30px;
+}
+
+.social .links a i {
+  font-size: 3rem;
+}
+
+.social .links iframe {
+  width: 300px;
+  height: 180px;
+}
+
+.carousel-item {
+  height: 400px;
+  margin-bottom: 10px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #050209;
+  background-image: url(imagenes/banner.1.jpeg);
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+
+/* pagina secundaria "cuidados" */
+/* pagina secundaria "tienda" */
+.card {
+  margin-left: 30px;
+  margin-top: 5px;
+  width: 80%;
+  height: 400px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+}
+
+.card-body h5 {
+  color: black;
+}
+
+.card-body p {
+  color: black;
+}
+
+/* pagina secundaria "contactos" */
+.form-color {
+  max-width: 25em;
+  padding: 30px;
+  margin: 0 auto;
+  background-color: rgba(120, 119, 123, 0.3);
+  border-radius: 0.5em;
+  -webkit-box-shadow: inset 1px 1px 22px 4px rgba(0, 0, 0, 0.85);
+          box-shadow: inset 1px 1px 22px 4px rgba(0, 0, 0, 0.85);
+}
+
+/* pagina secundaria "preguntas frecuentes" */
+.conteiner-pf {
+  margin: 10px;
+  font-family: sans-serif;
+}
+
+.titulo-pf strong {
+  font-size: 40px;
+  color: gold;
+}
+
+strong {
+  font-size: 25px;
+}
+
+/* @media movile */
+@media only screen and (min-width: 300px) and (max-width: 479px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  div.intro {
+    background-image: url(imagenes/imagenprimaria.jpg);
+    width: 100%;
+    height: 310px;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  .intro h1 p {
+    font-size: 12px;
+  }
+  .contenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-gap: 5px 5px;
+  }
+  .caja {
+    border: 2px solid springgreen;
+  }
+  .banner1 {
+    width: 90%;
+    background-image: url(imagenes/Garden/Design.jpg);
+    background-size: cover;
+    background-position: justify;
+    font-size: 15px;
+    color: grey;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    border-radius: 5px;
+  }
+  .galeria2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .galeria2 img {
+    width: 230px;
+  }
+  .banner2 {
+    width: 100%;
+    height: 250px;
+    background-image: url(imagenes/banner.1.jpeg);
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .logofooter img {
+    width: 100px;
+  }
+  /* pagina secundaria movile "especies" */
+  .sec-especies img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    margin: 0px;
+    padding: 5px;
+    border: 2px solid seagreen;
+  }
+  .sec-especies h2 {
+    margin-top: 20px;
+    -webkit-text-decoration: underline silver;
+            text-decoration: underline silver;
+  }
+  .footerlink li a {
+    font-size: 16px;
+    width: 80px;
+  }
+}
+
+/* tabled */
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .logo img {
+    width: 200px;
+    height: 150px;
+  }
+  div.intro {
+    background-image: url(imagenes/imagenprimaria.jpg);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .contenedor {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 5px 5px;
+  }
+  .caja {
+    border: 2px solid springgreen;
+  }
+  .banner1 {
+    width: 90%;
+    height: 250px;
+    background-image: url(imagenes/Garden/Design.jpg);
+    background-size: cover;
+    background-position: justify;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    border-radius: 5px;
+  }
+  .galeria2 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin-left: 70px;
+  }
+  .banner2 {
+    width: 100%;
+    height: 250px;
+    background-image: url(imagenes/banner.1.jpeg);
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .logofooter img {
+    width: 100px;
+  }
+  /* tabled especies */
+  .sec-especies img {
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    padding: 5px;
+    border: 2px solid seagreen;
+  }
+  .sec-especies h2 {
+    margin-top: 20px;
+    -webkit-text-decoration: underline silver;
+            text-decoration: underline silver;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

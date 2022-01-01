@@ -1,0 +1,249 @@
+@import "variables";
+@import "header";
+@import "main";
+@import "seccion1";
+@import "secion2";
+@import "banner";
+@import "footer";
+@import "carrousell";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #050209;
+    background-image: url(imagenes/banner.1.jpeg);
+    color: white;
+    font-family:$fuenteprincipal;
+}
+
+        /* pagina secundaria "cuidados" */
+
+        /* pagina secundaria "tienda" */     
+.card{
+    margin-left:30px;
+    margin-top: 5px;
+    width: 80%;
+    height: 400px;
+
+}        
+.card img{
+    width: 100%;
+    height: 200px;
+
+}
+.card-body h5 {
+    color: black;
+}
+.card-body p{
+    color: black;
+}
+                /* pagina secundaria "contactos" */
+.form-color{
+    max-width: 25em;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: rgba(120, 119, 123, 0.3);
+    border-radius: 0.5em;
+    box-shadow: inset 1px 1px 22px 4px rgba(0, 0, 0, 0.85);
+}
+              /* pagina secundaria "preguntas frecuentes" */
+.conteiner-pf{
+    margin: 10px;
+    font-family: sans-serif;
+}         
+.titulo-pf strong{
+    font-size:40px ;
+    color: gold;
+}     
+strong{
+    font-size: 25px;
+}
+           /* @media movile */
+@media only screen and (min-width:300px) and (max-width:479px){
+
+ header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+div.intro{
+    background-image: url(imagenes/imagenprimaria.jpg);
+    width: 100%;
+    height: 310px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    color: black;
+}
+  h1{
+    font-size: 18px;
+}
+  .intro h1 p{
+      font-size: 12px;
+}
+  .contenedor{
+     display: flex;
+     flex-direction: column;
+     grid-gap: 5px 5px;
+}
+ .caja{
+     border: 2px solid springgreen;
+}
+ .banner1{
+    width: 90%;
+    background-image: url(imagenes/Garden/Design.jpg);
+    background-size: cover;
+    background-position: justify;
+    font-size: 15px;
+    color: grey;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+ .galeria2 {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+ article{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+ .galeria2 img{
+     width: 230px;
+}
+.banner2{
+    width: 100%;
+    height: 250px;
+    background-image: url(imagenes/banner.1.jpeg);
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+.logofooter img{
+    width: 100px;
+}
+      /* pagina secundaria movile "especies" */
+.sec-especies img{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    margin: 0px;
+    padding: 5px;
+    border: 2px solid seagreen;
+}
+.sec-especies  h2{
+    margin-top: 20px;
+    text-decoration: underline silver;
+}
+.footerlink li a{
+    font-size: 16px;
+    width: 80px;
+}
+}
+
+                        /* tabled */
+
+@media only screen and (min-width:480px) and (max-width:768px){
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.logo img{
+    width: 200px;
+    height: 150px;
+}
+div.intro{
+    background-image: url(imagenes/imagenprimaria.jpg);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    color: black;
+}
+h1{
+    font-size: 40px;
+}
+.contenedor{
+    display: grid;
+    grid-gap: 5px 5px;
+}
+.caja{
+    border: 2px solid springgreen;
+}
+.banner1{
+    width: 90%;
+    height: 250px;
+    background-image: url(imagenes/Garden/Design.jpg);
+    background-size: cover;
+    background-position: justify;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+    margin-left:25px;
+    border-radius: 5px;
+}
+.galeria2{
+    grid-template-columns: 1fr;
+    margin-left: 70px;
+}
+.banner2{
+    width: 100%;
+    height: 250px;
+    background-image: url(imagenes/banner.1.jpeg);
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+.logofooter img{
+    width: 100px;
+}
+                   /* tabled especies */
+
+.sec-especies img{
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    padding: 5px;
+    border: 2px solid seagreen;
+}
+.sec-especies  h2{
+    margin-top: 20px;
+    text-decoration: underline silver;
+}
+
+}
+
+
