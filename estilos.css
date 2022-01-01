@@ -250,8 +250,8 @@ div p {
 .galeria2 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: 1fr, 1fr, 1fr, 1fr;
+      grid-template-columns: 1fr, 1fr, 1fr, 1fr;
   gap: 25px;
   padding: 10px;
 }

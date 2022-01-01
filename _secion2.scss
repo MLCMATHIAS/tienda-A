@@ -2,7 +2,7 @@
            /* setion2 */
 .galeria2{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: (1fr, 1fr, 1fr, 1fr);
     gap: 25px;
     padding:10px;
     & img {
