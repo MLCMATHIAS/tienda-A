@@ -16,10 +16,24 @@ body{
     background-color: #050209;
     background-image: url(imagenes/banner.1.jpeg);
     color: white;
-    font-family:$fuenteprincipal;
+    font-family:'Oswald', sans-serif;
 }
 
         /* pagina secundaria "cuidados" */
+@mixin fontstyle {
+    color: white;
+    background-color:$colorterciario;
+    text-transform: uppercase;      
+        }
+.cuidadosh3{
+    font-size: 40px;
+    @include fontstyle()   
+}
+.cuidadosp{
+    font-size: 30px;
+    @include fontstyle()
+}
+
 
         /* pagina secundaria "tienda" */     
 .card{
@@ -50,6 +64,7 @@ body{
     box-shadow: inset 1px 1px 22px 4px rgba(0, 0, 0, 0.85);
 }
               /* pagina secundaria "preguntas frecuentes" */
+
 .conteiner-pf{
     margin: 10px;
     font-family: sans-serif;
@@ -77,7 +92,7 @@ strong{
 div.intro{
     background-image: url(imagenes/imagenprimaria.jpg);
     width: 100%;
-    height: 310px;
+    height: 350px;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -88,12 +103,12 @@ div.intro{
     padding-left: 10px;
     margin-bottom: 10px;
     color: black;
+    & p{
+        font-size: 18px;
+    }
 }
   h1{
-    font-size: 18px;
-}
-  .intro h1 p{
-      font-size: 12px;
+    font-size: 25px;
 }
   .contenedor{
      display: flex;
@@ -108,19 +123,26 @@ div.intro{
     background-image: url(imagenes/Garden/Design.jpg);
     background-size: cover;
     background-position: justify;
-    font-size: 15px;
+    font-size: 25px;
     color: grey;
-    padding: 5px;
-    margin-bottom: 10px;
+    padding: 20px;
+    margin-bottom: 60px;
     margin-left: 15px;
     border-radius: 5px;
+    & h2{
+        font-size: 30px;
+    }
+    & p{
+        font-size: 18px;
+    }
+    
 }
  .galeria2 {
      display: flex;
      flex-direction: column;
      align-items: center;
 }
- article{
+ .article{
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -139,6 +161,15 @@ div.intro{
 }
 .logofooter img{
     width: 100px;
+}
+.textmapa{
+    text-align: center;
+    font-size: 20px;
+}
+iframe{
+    width: 90% !important;
+    height: 100px !important;
+    margin: 10px;
 }
       /* pagina secundaria movile "especies" */
 .sec-especies img{
@@ -180,7 +211,7 @@ nav ul{
 div.intro{
     background-image: url(imagenes/imagenprimaria.jpg);
     width: 100%;
-    height: 300px;
+    height: 330px;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -204,13 +235,13 @@ h1{
 }
 .banner1{
     width: 90%;
-    height: 250px;
-    background-image: url(imagenes/Garden/Design.jpg);
+    height: 450px;
+    background-image: url(imagenes/Garden-Design.jpg);
     background-size: cover;
     background-position: justify;
     font-size: 20px;
     color: black;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-left:25px;
     border-radius: 5px;
 }

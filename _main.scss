@@ -14,7 +14,13 @@ div.intro{
     margin-bottom: 20px;
     color: black;
     border: 2px solid gray;
-}
+    & p{
+        font-size: 25px;
+    
+    }
+    
+
+    }
 h1{
     font-size: 70px;
     text-shadow: 5px 5px 5px slategrey;
@@ -31,9 +37,4 @@ h1{
         100%{
             opacity: 1;
         }
-}
-    
-div p{
-        font-size: 20px;
-}    
-
+}   

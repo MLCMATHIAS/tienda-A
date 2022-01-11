@@ -9,9 +9,13 @@
     color: black;
     margin-bottom: 20px;
     & h2{
-        font-size: 40px;
-        text-shadow: 5px 5px 5px slategrey;        
+        font-size: 50px;
+        text-shadow: 5px 5px 5px slategrey;     
     }
+    & p{
+        font-size: 25px;
+        color: steelblue;
+    }   
 }
 
 

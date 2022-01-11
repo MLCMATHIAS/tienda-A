@@ -82,6 +82,10 @@ div.intro {
   border: 2px solid gray;
 }
 
+div.intro p {
+  font-size: 25px;
+}
+
 h1 {
   font-size: 70px;
   text-shadow: 5px 5px 5px slategrey;
@@ -103,10 +107,6 @@ h1 {
   100% {
     opacity: 1;
   }
-}
-
-div p {
-  font-size: 20px;
 }
 
 /* section 1*/
@@ -140,7 +140,7 @@ div p {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
-  background-image: url(imagenes/img-galeria1.jpg);
+  background-image: url(imagenes/trabajo-jardin.jpeg);
   background-size: cover;
   background-position: center;
   border: 3px solid greenyellow;
@@ -211,7 +211,7 @@ div p {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  background-image: url(imagenes/img.6-galeria.jpg);
+  background-image: url(imagenes/Sembrar-un-jardín-es-una-saludable-actividad-familiar.jpg);
   background-size: cover;
   background-position: center;
   border: 3px solid greenyellow;
@@ -243,6 +243,7 @@ div p {
   background-image: url(imagenes/img.diseño.jpg);
   background-size: cover;
   background-position: center;
+  border: 3px solid greenyellow;
   border-radius: 3px;
 }
 
@@ -250,8 +251,8 @@ div p {
 .galeria2 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr, 1fr, 1fr, 1fr;
-      grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 25px;
   padding: 10px;
 }
@@ -280,8 +281,13 @@ div p {
 }
 
 .banner1 h2 {
-  font-size: 40px;
+  font-size: 50px;
   text-shadow: 5px 5px 5px slategrey;
+}
+
+.banner1 p {
+  font-size: 25px;
+  color: steelblue;
 }
 
 /* footer */
@@ -336,11 +342,6 @@ div p {
   font-size: 3rem;
 }
 
-.social .links iframe {
-  width: 300px;
-  height: 180px;
-}
-
 .carousel-item {
   height: 400px;
   margin-bottom: 10px;
@@ -364,10 +365,24 @@ body {
   background-color: #050209;
   background-image: url(imagenes/banner.1.jpeg);
   color: white;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 /* pagina secundaria "cuidados" */
+.cuidadosh3 {
+  font-size: 40px;
+  color: white;
+  background-color: slategrey;
+  text-transform: uppercase;
+}
+
+.cuidadosp {
+  font-size: 30px;
+  color: white;
+  background-color: slategrey;
+  text-transform: uppercase;
+}
+
 /* pagina secundaria "tienda" */
 .card {
   margin-left: 30px;
@@ -442,7 +457,7 @@ strong {
   div.intro {
     background-image: url(imagenes/imagenprimaria.jpg);
     width: 100%;
-    height: 310px;
+    height: 350px;
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -463,11 +478,11 @@ strong {
     margin-bottom: 10px;
     color: black;
   }
-  h1 {
+  div.intro p {
     font-size: 18px;
   }
-  .intro h1 p {
-    font-size: 12px;
+  h1 {
+    font-size: 25px;
   }
   .contenedor {
     display: -webkit-box;
@@ -487,12 +502,18 @@ strong {
     background-image: url(imagenes/Garden/Design.jpg);
     background-size: cover;
     background-position: justify;
-    font-size: 15px;
+    font-size: 25px;
     color: grey;
-    padding: 5px;
-    margin-bottom: 10px;
+    padding: 20px;
+    margin-bottom: 60px;
     margin-left: 15px;
     border-radius: 5px;
+  }
+  .banner1 h2 {
+    font-size: 30px;
+  }
+  .banner1 p {
+    font-size: 18px;
   }
   .galeria2 {
     display: -webkit-box;
@@ -506,7 +527,7 @@ strong {
         -ms-flex-align: center;
             align-items: center;
   }
-  article {
+  .article {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -537,6 +558,15 @@ strong {
   }
   .logofooter img {
     width: 100px;
+  }
+  .textmapa {
+    text-align: center;
+    font-size: 20px;
+  }
+  iframe {
+    width: 90% !important;
+    height: 100px !important;
+    margin: 10px;
   }
   /* pagina secundaria movile "especies" */
   .sec-especies img {
@@ -590,7 +620,7 @@ strong {
   div.intro {
     background-image: url(imagenes/imagenprimaria.jpg);
     width: 100%;
-    height: 300px;
+    height: 330px;
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -624,13 +654,13 @@ strong {
   }
   .banner1 {
     width: 90%;
-    height: 250px;
-    background-image: url(imagenes/Garden/Design.jpg);
+    height: 450px;
+    background-image: url(imagenes/Garden-Design.jpg);
     background-size: cover;
     background-position: justify;
     font-size: 20px;
     color: black;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-left: 25px;
     border-radius: 5px;
   }
