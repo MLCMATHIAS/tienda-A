@@ -150,7 +150,7 @@ strong {
     grid-gap: 5px 5px;
   }
   .caja {
-    width: 280px;
+    width: 300px;
     height: 250px;
     border: 2px solid springgreen;
   }
@@ -179,11 +179,9 @@ strong {
     align-items: center;
     margin-left: 25px;
   }
-
   .galeria2 img {
     width: 230px;
   }
-
   .footer {
     display: flex;
     flex-direction: column;
@@ -213,26 +211,17 @@ strong {
     font-size: 15px;
   }
 
-  /* pagina secundaria movile "" */
-  .sec-especies img {
-    display: flex;
-    width: 100%;
-    height: 200px;
-    margin: 0px;
-    padding: 5px;
-    border: 2px solid seagreen;
-  }
-  .sec-especies h2 {
-    margin-top: 20px;
-    text-decoration: underline silver;
-  }
-  .footerlink li a {
+  /* pagina secundaria movile "tienda" */
+.container{
+  padding-left: 5px;
+}  
+.footerlink li a {
     font-size: 16px;
     width: 80px;
   }
 }
 //    pagina secundaria "contacto"
-.container{
+.container-form{
   width: 100%;
   max-width: 1100px;
   margin: auto;
