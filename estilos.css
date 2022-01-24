@@ -45,14 +45,13 @@ nav li {
 }
 
 nav li a {
-  text-decoration: none;
   color: white !important;
-  font-size: 25px;
+  font-size: 30px;
 }
 
-nav li a a:hover {
+nav li a:hover {
   color: gold !important;
-  opacity: .7;
+  opacity: 7.1;
 }
 
 /* main */
@@ -84,6 +83,10 @@ div.intro {
 
 div.intro p {
   font-size: 25px;
+}
+
+.card-text {
+  color: black !important;
 }
 
 h1 {
@@ -123,7 +126,10 @@ h1 {
   grid-gap: 20px 40px;
   text-align: center;
   color: white;
-  line-height: 120px;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 120px 120px 120px;
+      grid-template-rows: 120px 120px 120px;
 }
 
 .caja:hover {
@@ -282,12 +288,16 @@ h1 {
 
 .banner1 h2 {
   font-size: 50px;
-  text-shadow: 5px 5px 5px slategrey;
+  text-transform: capitalize;
+  padding: 5px;
+  text-shadow: 5px 5px 5px steelblue;
 }
 
 .banner1 p {
   font-size: 25px;
-  color: steelblue;
+  color: black;
+  padding: 5px;
+  text-shadow: 2px 2px 2px gray;
 }
 
 /* footer */
@@ -335,6 +345,7 @@ h1 {
 }
 
 .social .links a {
+  color: white;
   margin: 0 30px;
 }
 
@@ -365,30 +376,39 @@ body {
   background-color: #050209;
   background-image: url(imagenes/banner.1.jpeg);
   color: white;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 /* pagina secundaria "cuidados" */
+.conteiner-2 {
+  padding: 5px;
+}
+
 .cuidadosh3 {
-  font-size: 40px;
+  font-size: 30px;
   color: white;
-  background-color: slategrey;
+  background-color: black;
   text-transform: uppercase;
 }
 
 .cuidadosp {
-  font-size: 30px;
+  font-size: 20px;
   color: white;
-  background-color: slategrey;
+  background-color: black;
   text-transform: uppercase;
 }
 
 /* pagina secundaria "tienda" */
+.container {
+  margin-bottom: 10px;
+}
+
 .card {
-  margin-left: 30px;
-  margin-top: 5px;
-  width: 80%;
+  width: 100%;
   height: 400px;
+  margin: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .card img {
@@ -400,11 +420,46 @@ body {
   color: black;
 }
 
-.card-body p {
-  color: black;
+/* pagina secundaria "contactos" */
+.container-form {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid: gap 50px;
+  margin-top: 50px;
 }
 
-/* pagina secundaria "contactos" */
+.container-form h2 {
+  margin-bottom: 15px;
+  font-size: 35px;
+  text-decoration: underline;
+}
+
+.container-form p {
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.container-form a {
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 15px;
+  color: white;
+  font-weight: 700px;
+}
+
+.container-form a i {
+  color: chartreuse;
+  margin-right: 10px;
+}
+
 .form-color {
   max-width: 25em;
   padding: 30px;
@@ -473,8 +528,7 @@ strong {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    padding-bottom: 40px;
-    padding-left: 10px;
+    padding-left: 5px;
     margin-bottom: 10px;
     color: black;
   }
@@ -482,7 +536,7 @@ strong {
     font-size: 18px;
   }
   h1 {
-    font-size: 25px;
+    font-size: 30px;
   }
   .contenedor {
     display: -webkit-box;
@@ -495,17 +549,20 @@ strong {
     grid-gap: 5px 5px;
   }
   .caja {
+    width: 280px;
+    height: 250px;
     border: 2px solid springgreen;
   }
   .banner1 {
     width: 90%;
-    background-image: url(imagenes/Garden/Design.jpg);
+    height: 400px;
+    background-image: url(imagenes/Garden-Design.jpg);
     background-size: cover;
     background-position: justify;
     font-size: 25px;
     color: grey;
-    padding: 20px;
-    margin-bottom: 60px;
+    padding: 3px;
+    margin-bottom: 50px;
     margin-left: 15px;
     border-radius: 5px;
   }
@@ -526,26 +583,10 @@ strong {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .article {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    margin-left: 25px;
   }
   .galeria2 img {
     width: 230px;
-  }
-  .banner2 {
-    width: 100%;
-    height: 250px;
-    background-image: url(imagenes/banner.1.jpeg);
   }
   .footer {
     display: -webkit-box;
@@ -568,7 +609,17 @@ strong {
     height: 100px !important;
     margin: 10px;
   }
-  /* pagina secundaria movile "especies" */
+  .carousel-item active img {
+    height: 100px;
+  }
+  .cuidadosh3 {
+    font-size: 20px;
+    width: 100%;
+  }
+  .cuidadosp {
+    font-size: 15px;
+  }
+  /* pagina secundaria movile "" */
   .sec-especies img {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -588,6 +639,27 @@ strong {
     font-size: 16px;
     width: 80px;
   }
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  grid: gap 50px;
+  margin-top: 15px;
+  padding: 5px;
+}
+
+.imput-file {
+  width: 100%;
+}
+
+.textmapa {
+  font-size: 20px;
 }
 
 /* tabled */
@@ -643,6 +715,7 @@ strong {
   }
   h1 {
     font-size: 40px;
+    text-transform: uppercase;
   }
   .contenedor {
     display: -ms-grid;
@@ -653,21 +726,21 @@ strong {
     border: 2px solid springgreen;
   }
   .banner1 {
-    width: 90%;
+    width: 100%;
     height: 450px;
     background-image: url(imagenes/Garden-Design.jpg);
     background-size: cover;
     background-position: justify;
     font-size: 20px;
     color: black;
-    margin-bottom: 20px;
-    margin-left: 25px;
+    margin-bottom: 10px;
+    padding: 10px;
     border-radius: 5px;
   }
   .galeria2 {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    margin-left: 70px;
+    padding: 50px;
   }
   .banner2 {
     width: 100%;

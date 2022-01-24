@@ -1,41 +1,49 @@
-  /* header */
-.navbar img{
-    width:100px;
-    height: 60px;
-    border: 1px solid $colorprincipal;
-    border-radius: 5px;
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-delay: 5s;
-    animation-iteration-count: infinite;
+/* header */
+.navbar img {
+  width: 100px;
+  height: 60px;
+  border: 1px solid $colorprincipal;
+  border-radius: 5px;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
 }
-@keyframes aparecer{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-            /* barra de navegacion */
-nav{
-    width:100%;
-    background-image: linear-gradient(to bottom, #32b92c, #30b637, #30b441, #30b149, #32ae50, #3aa34f, #40984e, #448d4d, #467846, #456440, #40503b, #393d37);
-    & li{
-        list-style: none;
-        & a{
-            text-decoration: none;
-            color: white !important;
-            font-size: 25px;
-            & a:hover{
-                color: $colorsecundario !important;
-                opacity: .7;
-            }
-        }
+/* barra de navegacion */
+nav {
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    #32b92c,
+    #30b637,
+    #30b441,
+    #30b149,
+    #32ae50,
+    #3aa34f,
+    #40984e,
+    #448d4d,
+    #467846,
+    #456440,
+    #40503b,
+    #393d37
+  );
+  & li {
+    list-style: none;
+    & a {
+      color: white !important;
+      font-size: 30px;
+      &:hover {
+        color: $colorsecundario !important;
+        opacity: 7.1;
+      }
     }
-
+  }
 }
-    
-
-
-
